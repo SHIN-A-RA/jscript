@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array.html</title>
+</head>
+<body>
+    <p id="show"><ul><li>gildong,Hong,16</li></ul></p>
+    <script>
+        document.getElementById("show").innerHTML = "Hello";
+    var friend1 = {
+        firstName: "gildong",
+        lastName: "Hong",
+        age : 16
+    }
+    var friend2 = {
+        firstName: "seongwoo",
+        lastName: "Hong",
+        age : 456
+    }
+
+    var friend3 = {
+        firstName: "araaaa",
+        lastName: "Ho",
+        age : 233
+    }
+    var $myTag = "<ul>";
+    var friends = [friend1, friend2, friend3];
+    for (obj of friends){
+        for(f in obj){
+            $myTag += "<li>";
+        //console.log(obj[f])
+            $myTag += f+ ","+obj[f];
+        }
+        $myTag += "</li>";
+        //console.log(obj["firstName"]+", "+obj.lastName+", "+obj.age);
+    }
+        $myTag += "</ul>";
+        console.log($myTag);
+        document.getElementById("show").innerHTML = $myTag;
+</script>
+</body>
+</html>

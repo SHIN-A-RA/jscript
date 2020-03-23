@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string.html</title>
+</head>
+<body>
+    <script>
+        var str = "Please locate where 'locate' occurs";
+        str.length;
+        var pos =str. indexOf('locate');
+        pos = str.lastIndexOf('locate');
+        console.log(pos);
+        //slice, substring, substr, toUpperCase, toLowerCase, concat 
+        console.log(str.slice(7)); //7번째부터 끝까지 불러오기
+        console.log(str.substring(7,13)); //7번째부터 13번째까지 불러오기
+        console.log(str.substr(7,6).toUpperCase()); //7부터 6개 불러오기 touppercase는 대문자로 변환
+
+    </script>
+    
+</body>
+</html>
